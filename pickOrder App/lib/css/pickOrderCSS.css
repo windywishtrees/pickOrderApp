@@ -1,0 +1,16 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+	width: 50%;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-spacing: 5px;
+  height: 50%;
+  table-layout: auto;
+  width: 50%;
+}
