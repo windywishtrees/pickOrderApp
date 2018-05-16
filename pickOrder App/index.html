@@ -1,136 +1,136 @@
 <!DOCTYPE html>
 <html>
   
-<link href="lib/css/pickOrderCSS.css" type="text/css" rel="stylesheet">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="lib/js/main.js" type="text/Javascript"></script>
-
-<head>
-  
-  <title>Order Picker v0.1</title>
-
-</head>
-<body>
-  <div class="playerEntry container form-group">
-
-    <h4 class="title">Please Enter Players:</h4>
-
-    <label><b>Player 1:</b></label>
-    <input class="playerInput form-control" type="text" value="izzet" id="playerOneNameInput" />
-
-    <label><b>Player 2:</b></label> 
-    <input class="playerInput form-control" type="text" value="golgari" id="playerTwoNameInput" />
-
-    <label><b>Player 3:</b></label>
-    <input class="playerInput form-control" type="text" value="azorius" id="playerThreeNameInput" />
-
-    <label><b>Player 4:</b></label>
-    <input class="playerInput form-control" type="text" value="simic" id="playerFourNameInput" />
-
-    <input type="submit" class="submitButton btn btn-default btn-sm btn-block" value="Submit" onclick="pickOrder()"  />
+  <link href="lib/css/pickOrderCSS.css" type="text/css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="lib/js/main.js" type="text/Javascript"></script>
+  <head>
     
-    <hr>
-    <h2 class="title">Players</h2>
-    <p class="printOutBox" id="printPlayers"></p>
-    <hr>
-    <h2 class="title">Turn Order</h2>
-    <p class="printOutBox" id="printOrder"></p>
-    
-  </div>
-  
-  <div class="lifeApp container">
-    <table>
-      <!--PLayer 1 + 2 TableHeader-->
-      <tr id="playerOneTwoRow">
-        <th>
-          <p id="playerOneNamePrint">Player 1</p>
-        </th>
-        <th>
-          <p id="playerTwoNamePrint">Player 2</p>
-        </th>
-      </tr>
-      <!--Player 1 + 2 Life Total-->
-      <tr id="playerOneTwoLifeRow">
-        <td id="playerOneLifeCell" class="tableCell">
-          <input type="number" id="playerOneLifePrint" class="hitpoints" value="40">
-        </td>
-        <td id="playerTwoLifeCell" class="tableCell">
-          <input type="number" id="playerTwoLifePrint" class="hitpoints" value="40">
-        </td>
-      </tr>
-      <!--Player 1 + 2 Buttons-->
-      <tr id="playerOneTwoButtonsRow">
-        <td id="playerOneButtons">
-          <input type="button" class="lifePlusButton btn-primary" value="+1 Life" onclick="adjustLife(playerOneLife, 'playerOneLifePrint', 1)">
-          <input type="button" class="lifePlusButton btn-primary" value="+5 Life" onclick="adjustLife(playerOneLife, 'playerOneLifePrint', 5)">
-          <input type="button" class="lifePlusButton btn-primary" value="+10 Life" onclick="adjustLife(playerOneLife, 'playerOneLifePrint', 10)"><br>
-          <input type="button" class="lifeMinusButton btn-danger" value="-1 Life" onclick="adjustLife(playerOneLife, 'playerOneLifePrint', -1)">
-          <input type="button" class="lifeMinusButton btn-danger" value="-5 Life" onclick="adjustLife(playerOneLife, 'playerOneLifePrint', -5)">
-          <input type="button" class="lifeMinusButton btn-danger" value="-10 Life" onclick="adjustLife(playerOneLife, 'playerOneLifePrint', -10)"><br>
-          <input type="button" class="lifeResetButton btn-success" value="Reset" onclick="resetLife(playerOneLife, 'playerOneLifePrint')">
-        </td>
-        
-        <td id="playerTwoButtons">
-          <input type="button" class="lifePlusButton btn-primary" value="+1 Life" onclick="adjustLife(playerTwoLife, 'playerTwoLifePrint', 1)">
-          <input type="button" class="lifePlusButton btn-primary" value="+5 Life" onclick="adjustLife(playerTwoLife, 'playerTwoLifePrint', 5)">
-          <input type="button" class="lifePlusButton btn-primary" value="+10 Life" onclick="adjustLife(playerTwoLife, 'playerTwoLifePrint', 10)"><br>
-          <input type="button" class="lifeMinusButton btn-danger" value="-1 Life" onclick="adjustLife(playerTwoLife, 'playerTwoLifePrint', -1)">
-          <input type="button" class="lifeMinusButton btn-danger" value="-5 Life" onclick="adjustLife(playerTwoLife, 'playerTwoLifePrint', -5)">
-          <input type="button" class="lifeMinusButton btn-danger" value="-10 Life" onclick="adjustLife(playerTwoLife, 'playerTwoLifePrint', -10)"><br>
-          <input type="button" class="lifeResetButton btn-success" value="Reset" onclick="resetLife(playerTwoLife, 'playerTwoLifePrint')">
-        </td>
-        <!--Spacing row to create gap-->
-        <tr id="spacerRows">
-          <td><p>   <br>   </p></td>
-          <td><p>   <br>   </p></td>
-        </tr>
-        <!-- Player 3 + 4 Buttons -->
-        <tr id="playerThreeFourButtonsRow">
-          <td id="playerThreeCell" class="tableCell">
-            <br>
-            <input type="button" class="lifePlusButton btn-primary" value="+1 Life" onclick="adjustLife(playerThreeLife, 'playerThreeLifePrint', 1)">
-            <input type="button" class="lifePlusButton btn-primary" value="+5 Life" onclick="adjustLife(playerThreeLife, 'playerThreeLifePrint', 5)">
-            <input type="button" class="lifePlusButton btn-primary" value="+10 Life" onclick="adjustLife(playerThreeLife, 'playerThreeLifePrint', 10)"><br>
-            <input type="button" class="lifeMinusButton btn-danger" value="-1 Life" onclick="adjustLife(playerThreeLife, 'playerThreeLifePrint', -1)">
-            <input type="button" class="lifeMinusButton btn-danger" value="-5 Life" onclick="adjustLife(playerThreeLife, 'playerThreeLifePrint', -5)">
-            <input type="button" class="lifeMinusButton btn-danger" value="-10 Life" onclick="adjustLife(playerThreeLife, 'playerThreeLifePrint', -10)"><br>
-            <input type="button" class="lifeResetButton btn-success" value="Reset" onclick="resetLife(playerThreeLife, 'playerThreeLifePrint')">
-          </td>
-          <td id="playerFourCell" class="tableCell">
-            
-            <br>
-            <input type="button" class="lifePlusButton btn-primary" value="+1 Life" onclick="adjustLife(playerFourLife, 'playerFourLifePrint', 1)">
-            <input type="button" class="lifePlusButton btn-primary" value="+5 Life" onclick="adjustLife(playerFourLife, 'playerFourLifePrint', 5)">
-            <input type="button" class="lifePlusButton btn-primary" value="+10 Life" onclick="adjustLife(playerFourLife, 'playerFourLifePrint', 10)"><br>
-            <input type="button" class="lifeMinusButton btn-danger" value="-1 Life" onclick="adjustLife(playerFourLife, 'playerFourLifePrint', -1)">
-            <input type="button" class="lifeMinusButton btn-danger" value="-5 Life" onclick="adjustLife(playerFourLife, 'playerFourLifePrint', -5)">
-            <input type="button" class="lifeMinusButton btn-danger" value="-10 Life" onclick="adjustLife(playerFourLife, 'playerFourLifePrint', -10)"><br>
-            <input type="button" class="lifeResetButton btn-success" value="Reset" onclick="resetLife(playerFourLife, 'playerFourLifePrint')">
-          </td>
-        </tr>
-        <!--Player 3 + 4 Life Total-->
-        <tr id="playerThreeFourLifeRow">
-          <td>
-            <input type="number" id="playerThreeLifePrint" class="hitpoints" value="40">
-          </td>
-          <td>
-            <input type="number" id="playerFourLifePrint" class="hitpoints" value="40">
-          </td>
-        </tr>
-        <tr>
-          <th>
-            <p id="playerThreeNamePrint">Player 3</p>
-          </th>
-          <th>
-            <p id="playerFourNamePrint">Player 4</p>
-          </th>
-        </tr>
-      </table>
-    </div>
-  </body>
+    <title>Order Picker v0.1</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row content">
+        <div class="col-sm-3 sidenav">
+          <h4>Enter PLayer Names:</h4>
+          <label><b>Player 1:</b></label>
+          <input class="playerInput form-control" type="text" value="izzet" id="playerOneNameInput" />
+          <label><b>Player 2:</b></label>
+          <input class="playerInput form-control" type="text" value="golgari" id="playerTwoNameInput" />
+          <label><b>Player 3:</b></label>
+          <input class="playerInput form-control" type="text" value="azorius" id="playerThreeNameInput" />
+          <label><b>Player 4:</b></label>
+          <input class="playerInput form-control" type="text" value="simic" id="playerFourNameInput" />
+          <input type="submit" class="submitButton btn btn-default btn-sm btn-block" value="Submit" onclick="pickOrder()"  />
+          
+          <hr>
+          <h2 class="title">Players</h2>
+          <p class="printOutBox" id="printPlayers"></p>
+          <hr>
+          <h2 class="title">Turn Order</h2>
+          <p class="printOutBox" id="printOrder"></p>
+        </div>
+      <div class="col-sm-9">  
 
-</html>
+        <div class="lifeApp container">
+          <table>
+            <!--PLayer 1 + 2 TableHeader-->
+            <tr id="playerOneTwoRow">
+              <th>
+                <p id="playerOneNamePrint">Player 1</p>
+              </th>
+              <th>
+                <p id="playerTwoNamePrint">Player 2</p>
+              </th>
+            </tr>
+            <!--Player 1 + 2 Life Total-->
+            <tr id="playerOneTwoLifeRow">
+              <td id="playerOneLifeCell" class="tableCell">
+                <input type="number" id="playerOneLifePrint" class="hitpoints" value="40">
+              </td>
+              <td id="playerTwoLifeCell" class="tableCell">
+                <input type="number" id="playerTwoLifePrint" class="hitpoints" value="40">
+              </td>
+            </tr>
+            <!--Player 1 + 2 Buttons-->
+            <tr id="playerOneTwoButtonsRow">
+              <td id="playerOneButtons">
+                <input type="button" class="lifePlusButton btn-primary" value="+1 Life" onclick="adjustLife(playerOneLife, 'playerOneLifePrint', 1)">
+                <input type="button" class="lifePlusButton btn-primary" value="+5 Life" onclick="adjustLife(playerOneLife, 'playerOneLifePrint', 5)">
+                <input type="button" class="lifePlusButton btn-primary" value="+10 Life" onclick="adjustLife(playerOneLife, 'playerOneLifePrint', 10)"><br>
+                <input type="button" class="lifeMinusButton btn-danger" value="-1 Life" onclick="adjustLife(playerOneLife, 'playerOneLifePrint', -1)">
+                <input type="button" class="lifeMinusButton btn-danger" value="-5 Life" onclick="adjustLife(playerOneLife, 'playerOneLifePrint', -5)">
+                <input type="button" class="lifeMinusButton btn-danger" value="-10 Life" onclick="adjustLife(playerOneLife, 'playerOneLifePrint', -10)"><br>
+                <input type="button" class="lifeResetButton btn-success" value="Reset" onclick="resetLife(playerOneLife, 'playerOneLifePrint')">
+              </td>
+              
+              <td id="playerTwoButtons">
+                <input type="button" class="lifePlusButton btn-primary" value="+1 Life" onclick="adjustLife(playerTwoLife, 'playerTwoLifePrint', 1)">
+                <input type="button" class="lifePlusButton btn-primary" value="+5 Life" onclick="adjustLife(playerTwoLife, 'playerTwoLifePrint', 5)">
+                <input type="button" class="lifePlusButton btn-primary" value="+10 Life" onclick="adjustLife(playerTwoLife, 'playerTwoLifePrint', 10)"><br>
+                <input type="button" class="lifeMinusButton btn-danger" value="-1 Life" onclick="adjustLife(playerTwoLife, 'playerTwoLifePrint', -1)">
+                <input type="button" class="lifeMinusButton btn-danger" value="-5 Life" onclick="adjustLife(playerTwoLife, 'playerTwoLifePrint', -5)">
+                <input type="button" class="lifeMinusButton btn-danger" value="-10 Life" onclick="adjustLife(playerTwoLife, 'playerTwoLifePrint', -10)"><br>
+                <input type="button" class="lifeResetButton btn-success" value="Reset" onclick="resetLife(playerTwoLife, 'playerTwoLifePrint')">
+              </td>
+            </tr>
+              <!--Spacing row to create gap-->
+              <tr id="spacerRows">
+                <td><p>   <br>   </p></td>
+                <td><p>   <br>   </p></td>
+              </tr>
+              <!-- Player 3 + 4 Buttons -->
+              <tr id="playerThreeFourButtonsRow">
+                <td id="playerThreeCell" class="tableCell">
+                  <br>
+                  <input type="button" class="lifePlusButton btn-primary" value="+1 Life" onclick="adjustLife(playerThreeLife, 'playerThreeLifePrint', 1)">
+                  <input type="button" class="lifePlusButton btn-primary" value="+5 Life" onclick="adjustLife(playerThreeLife, 'playerThreeLifePrint', 5)">
+                  <input type="button" class="lifePlusButton btn-primary" value="+10 Life" onclick="adjustLife(playerThreeLife, 'playerThreeLifePrint', 10)"><br>
+                  <input type="button" class="lifeMinusButton btn-danger" value="-1 Life" onclick="adjustLife(playerThreeLife, 'playerThreeLifePrint', -1)">
+                  <input type="button" class="lifeMinusButton btn-danger" value="-5 Life" onclick="adjustLife(playerThreeLife, 'playerThreeLifePrint', -5)">
+                  <input type="button" class="lifeMinusButton btn-danger" value="-10 Life" onclick="adjustLife(playerThreeLife, 'playerThreeLifePrint', -10)"><br>
+                  <input type="button" class="lifeResetButton btn-success" value="Reset" onclick="resetLife(playerThreeLife, 'playerThreeLifePrint')">
+                </td>
+                <td id="playerFourCell" class="tableCell">
+                  
+                  <br>
+                  <input type="button" class="lifePlusButton btn-primary" value="+1 Life" onclick="adjustLife(playerFourLife, 'playerFourLifePrint', 1)">
+                  <input type="button" class="lifePlusButton btn-primary" value="+5 Life" onclick="adjustLife(playerFourLife, 'playerFourLifePrint', 5)">
+                  <input type="button" class="lifePlusButton btn-primary" value="+10 Life" onclick="adjustLife(playerFourLife, 'playerFourLifePrint', 10)"><br>
+                  <input type="button" class="lifeMinusButton btn-danger" value="-1 Life" onclick="adjustLife(playerFourLife, 'playerFourLifePrint', -1)">
+                  <input type="button" class="lifeMinusButton btn-danger" value="-5 Life" onclick="adjustLife(playerFourLife, 'playerFourLifePrint', -5)">
+                  <input type="button" class="lifeMinusButton btn-danger" value="-10 Life" onclick="adjustLife(playerFourLife, 'playerFourLifePrint', -10)"><br>
+                  <input type="button" class="lifeResetButton btn-success" value="Reset" onclick="resetLife(playerFourLife, 'playerFourLifePrint')">
+                </td>
+              </tr>
+              <!--Player 3 + 4 Life Total-->
+              <tr id="playerThreeFourLifeRow">
+                <td>
+                  <input type="number" id="playerThreeLifePrint" class="hitpoints" value="40">
+                </td>
+                <td>
+                  <input type="number" id="playerFourLifePrint" class="hitpoints" value="40">
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <p id="playerThreeNamePrint">Player 3</p>
+                </th>
+                <th>
+                  <p id="playerFourNamePrint">Player 4</p>
+                </th>
+              </tr>
+            </table>
+          </div>
+          </div>
+        </div>
+        </body>
+        <footer class ="footer navbar-fixed bottom">
+          <p>Contact: <a href="mailto:rjgladysiewicz@gmail.com">rjgladysiewicz@gmail.com</a></p>
+          <p>Copyright 2018.</p>
+        </footer>
+      </html>

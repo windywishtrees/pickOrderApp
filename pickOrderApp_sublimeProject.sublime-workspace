@@ -1,0 +1,313 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bord",
+				"border-style"
+			],
+			[
+				"playerOne",
+				"playerOneLifeVar"
+			],
+			[
+				"playerOneLife",
+				"playerOneLifeVar"
+			],
+			[
+				"playerOneName",
+				"playerOneNamePrint"
+			],
+			[
+				"life",
+				"lifeToHTML"
+			],
+			[
+				"incre",
+				"increaseByOne"
+			],
+			[
+				"players",
+				"playersLife"
+			],
+			[
+				"li-",
+				"list-style"
+			],
+			[
+				"get",
+				"getComputerChoice"
+			],
+			[
+				"comput",
+				"computerChoice"
+			],
+			[
+				"s",
+				"scissors"
+			],
+			[
+				"compu",
+				"computerChoice"
+			],
+			[
+				"if",
+				"ife\tif … else"
+			],
+			[
+				"playerName",
+				"playerNameArrayGet"
+			],
+			[
+				"player",
+				"playerNameArray"
+			],
+			[
+				"play",
+				"playerNameArray"
+			],
+			[
+				"palyer",
+				"playerFourName"
+			],
+			[
+				"playerTwo",
+				"playerTwoName"
+			],
+			[
+				"playerTwoNam",
+				"playerTwoNameInput"
+			],
+			[
+				"sub",
+				"substitute"
+			],
+			[
+				"my",
+				"myValue"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/rj/Documents/pickOrderApp"
+	],
+	"file_history":
+	[
+		"/C/Users/rj/Desktop/playEDH/pickOrderCSS.css",
+		"/C/Users/rj/Desktop/playEDH/pickOrder_newCSS.html",
+		"/C/Users/rj/Desktop/playEDH/orderpickv05.html",
+		"/C/Users/rj/Desktop/playEDH/orderCSS.css",
+		"/C/Users/rj/Desktop/playEDH/playEDHJS.js",
+		"/C/Users/rj/Desktop/axaltaFinalPackage.xml",
+		"/C/Users/rj/Desktop/gore_5_7_18_Package.xml",
+		"/C/Users/rj/Desktop/axaltaFinalPackage.xmol.xml",
+		"/C/Users/rj/Desktop/playEDH/bootstrap.min.css",
+		"/C/Users/rj/Desktop/orderpickv05.html",
+		"/C/Users/rj/Desktop/Javascript Project/orderPicker.html",
+		"/C/Users/rj/Desktop/Java_EssT_Syntax_Structure/Java_EssT_Syntax_Structure/Exercise Files/Ch05/05_03/Loops/src/com/example/java/Main.java",
+		"/C/Users/rj/Desktop/Java_EssT_Syntax_Structure/Java_EssT_Syntax_Structure/Exercise Files/Ch05/05_03/Loops/Loops.iml",
+		"/C/Users/rj/Desktop/Javascript Project/c9js_02.html",
+		"/C/Users/rj/Desktop/package_Sprint_CP-00188_1.xml",
+		"/C/Program Files (x86)/NetBeans 8.2/etc/netbeans.conf"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"playerInput",
+			"lifeResetButton",
+			"lifeMinusButton",
+			"lifePlusButton",
+			"lifeButton",
+			"</center>",
+			"<center>",
+			"class=\"button\"",
+			"white",
+			">\n",
+			"id=\"incrementByOne\"",
+			"incrementByOne",
+			"value = value;",
+			"playerLifeTotal = playerLifeTotal;",
+			">\n",
+			".component",
+			"-meta.xml",
+			".cls",
+			">\n",
+			"white",
+			"incrementcount",
+			"playerOneNamePrint",
+			"<td class=\"left\"></td>",
+			"font-size",
+			"playerNameArray",
+			"            case 0;\n                System.out.Println(\"It's January.\");\n                break;",
+			"                \n",
+			"It"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"playerInput form-control ",
+			"lifeResetButton btn-success",
+			"lifeMinusButton btn-danger",
+			"lifePlusButton btn-primary",
+			"lifeButton btn",
+			"",
+			"class=\"lifeButton\"",
+			"#0392FF",
+			"",
+			"#eaedf2",
+			"eaedf2",
+			"<td></td>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pickOrderApp_sublimeProject.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
