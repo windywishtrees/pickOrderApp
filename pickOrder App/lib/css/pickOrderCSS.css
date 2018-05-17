@@ -3,9 +3,29 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn-lg {
-  width: 30%;
-  margin: .25%;
+  width: 32%;
+  margin: .35%;
   float: left;
+}
+
+.lifePlusButton {
+  background-color: #236167 !important;
+}
+
+.lifeMinusButton {
+  background-color: #AA4439 !important;
+}
+
+.lifeResetButton {
+  
+  background-color: #AAAA39 !important;
+}
+
+.playerNamePrint{
+  margin: 2%;
+    font-size: 30px;
+  text-align: center;
+
 }
 
 .container{
