@@ -133,6 +133,8 @@
 	],
 	"file_history":
 	[
+		"/C/Users/rj/Documents/pickOrderApp/pickOrder App/lib/css/pickOrderCSS.css",
+		"/C/Users/rj/Documents/pickOrderApp/pickOrder App/index.html",
 		"/C/Users/rj/Desktop/playEDH/pickOrderCSS.css",
 		"/C/Users/rj/Desktop/playEDH/pickOrder_newCSS.html",
 		"/C/Users/rj/Desktop/playEDH/orderpickv05.html",
@@ -264,7 +266,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "pickOrderApp_sublimeProject.sublime-project",
+	"project": "PIckOrderApp.sublime-project",
 	"replace":
 	{
 		"height": 50.0
@@ -305,7 +307,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 323.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

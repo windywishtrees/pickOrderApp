@@ -1,41 +1,67 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-lg {
+  width: 30%;
+  margin: .25%;
+  float: left;
 }
 
 .container{
-	width: 50%;
+width: 50%;
 }
 
 table {
-  border: 1px solid black;
-  border-collapse: collapse;
-  border-spacing: 5px;
-  height: 50%;
-  table-layout: auto;
-  width: 50%;
+color: white;
+height: 1000%;
+table-layout: auto;
+width: 90%;
 }
 
-    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-    .row.content {height: 1500px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height: auto;} 
-    }
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {
+height: 1500px;
+
+background-color: #2E4172;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+background-color: #2E4172;
+color: white;
+height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+background-color: #2E4172;
+color: white;
+padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+.sidenav {
+height: auto;
+padding: 15px;
+}
+.row.content {height: auto;}
+}
+
+.playerInput[type=text]{
+  background-color: #162955;
+  color: white;
+
+}
+
+.hitpoints[type=number]{
+  background-color: #162955;
+  color: white;
+
+}
+
+#submitButton {
+  background-color: #162955;
+  color: white;
+}
