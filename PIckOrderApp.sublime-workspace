@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"align",
+				"align-content\tproperty"
+			],
+			[
+				"background",
+				"background-color\tproperty"
+			],
+			[
 				"bord",
 				"border-style"
 			],
@@ -91,6 +99,24 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "pickOrder App/index.html",
+			"settings":
+			{
+				"buffer_size": 9286,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pickOrder App/lib/css/pickOrderCSS.css",
+			"settings":
+			{
+				"buffer_size": 1713,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -129,10 +155,12 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/rj/Documents/pickOrderApp"
+		"/C/Users/rj/Documents/pickOrderApp",
+		"/C/Users/rj/Documents/pickOrderApp/pickOrder App"
 	],
 	"file_history":
 	[
+		"/C/Users/rj/Documents/pickOrderApp/pickOrder App/lib/css/bootstrapOverride.css",
 		"/C/Users/rj/Documents/pickOrderApp/pickOrder App/lib/css/pickOrderCSS.css",
 		"/C/Users/rj/Documents/pickOrderApp/pickOrder App/index.html",
 		"/C/Users/rj/Desktop/playEDH/pickOrderCSS.css",
@@ -154,11 +182,11 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 104.0,
 		"where_history":
 		[
 		]
@@ -168,6 +196,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"control",
+			"br>",
+			"playerNamePrint",
+			"lifeMinusButton btn-danger",
+			"lifePlusButton btn-primary",
+			"row",
+			">\n",
 			"playerInput",
 			"lifeResetButton",
 			"lifeMinusButton",
@@ -203,6 +238,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"lifeMinusButton btn-danger btn-lg",
+			"lifePlusButton btn-primary btn-lg",
 			"playerInput form-control ",
 			"lifeResetButton btn-success",
 			"lifeMinusButton btn-danger",
@@ -225,8 +262,69 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "pickOrder App/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6975,
+								6975
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1386.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pickOrder App/lib/css/pickOrderCSS.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1713,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1092,
+								1092
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1350.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -269,7 +367,7 @@
 	"project": "PIckOrderApp.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -307,7 +405,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 323.0,
+	"side_bar_width": 240.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

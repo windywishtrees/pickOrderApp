@@ -1,38 +1,43 @@
+/* TODO: Fix button colors and weird border, probably a bootstrap thing */
+
 * {
+
 font-family: Arial, Helvetica, sans-serif;
 }
 
-.btn-lg {
-  width: 32%;
-  margin: .35%;
-  float: left;
+.container-fluid{
+background-color: #2E4172;  
+width: 100%;
 }
 
-/* TODO: Fix button colors and weird border, probably a bootstrap thing */
+/* Blog layout style CSS taken from Bootstrap Template */
 
-.lifePlusButton {
-  background-color: #236167 !important;
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {
+background-color: #2E4172;
+height: 75%;
 }
 
-.lifeMinusButton {
-  background-color: #AA4439 !important;
+
+
+/* Set background color and 100% height */
+.sidenav {
+background-color: #2E4172;
+color: white;
+height: 50%;
 }
 
-.lifeResetButton {
-  
-  background-color: #AAAA39 !important;
+/* Set black background color, white text and some padding */
+footer {
+background-color: white;
+border: solid;
+color: black;
+margin: 5%;
+padding: 10px;
+text-align: center;
 }
 
-.playerNamePrint{
-  margin: 2%;
-    font-size: 30px;
-  text-align: center;
-
-}
-
-.container{
-width: 50%;
-}
+/* Life points table */
 
 table {
 color: white;
@@ -41,26 +46,38 @@ table-layout: auto;
 width: 90%;
 }
 
-/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-.row.content {
-height: 1500px;
 
-background-color: #2E4172;
+
+/* Btn-Lg (applies to all buttons) */
+
+.btn-lg {
+  width: 32%;
+  margin: .25%;
+  float: left;
 }
 
-/* Set gray background color and 100% height */
-.sidenav {
-background-color: #2E4172;
-color: white;
-height: 100%;
+
+
+
+/* Life Buttons */
+
+.lifePlusButton {
+  background-color: #008F20 !important;
 }
 
-/* Set black background color, white text and some padding */
-footer {
-background-color: #2E4172;
-color: white;
-padding: 15px;
+.lifeMinusButton {
+  background-color: #A20041 !important;
 }
+
+.lifeResetButton {
+  background-color: #3979AA !important;
+  text-align: center;
+}
+
+
+
+
+
 
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
@@ -83,7 +100,23 @@ padding: 15px;
 
 }
 
+.playerNamePrint{
+  margin: 2%;
+    font-size: 30px;
+  text-align: center;
+
+}
+
 #submitButton {
   background-color: #162955;
   color: white;
+}
+
+.form-control-lg[type=number]{
+  
+  font-size: 50px !important;
+  height: 100px !important;
+  margin: auto;
+  text-align: center;
+  width: 25%;
 }
